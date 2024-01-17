@@ -1,7 +1,6 @@
 import React from 'react'
 import './myprojects.css'
 //images
-import about1 from '../../assets/about1.jpeg'
 import scanIT from '../../assets/ScanIT.png'
 import pantry from '../../assets/pantry.png'
 import foodGeeks from '../../assets/foodGeeks.png'
@@ -10,6 +9,7 @@ import review from '../../assets/review.png'
 import finance from '../../assets/finance.png'
 import twitter from '../../assets/twitter.png'
 import bms from '../../assets/BMS.png'
+import ML from '../../assets/ML.png'
 
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
@@ -32,7 +32,11 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 const Myprojects = () => {
 
   const [open, setOpen] = React.useState(false);
-  const [content, setContent] = React.useState([]);
+  const [content, setContent] = React.useState({
+    title: '',
+    description: '',
+    Technologies: '',
+  });
   var data = [{
     "title" : "ScanIT",
     "description": "I am proud to have led a team of developers in creating an innovative barcode-scanning application that fundamentally transformed the shopping experience. Our app was designed to seamlessly integrate data analysis techniques and leverage OpenAI APIs, providing users with personalized product recommendations tailored to their preferences. In addition to this, we also offered features such as the ability to save favorite products, curate shopping lists, and make notes for future purchases. All these user-focused features were implemented strategically to enhance convenience and customization. I am happy to say that our approach has positively impacted the shopping landscape and set a new standard for shopping apps.",
@@ -66,6 +70,10 @@ const Myprojects = () => {
     "title" : "Hostel Management",
     "description": "I initiated and executed a comprehensive project dedicated to the efficient management of B.M.S hostels, showcasing my proficiency in Java and Java-swing. As a critical part of this project, I architected an end-to-end framework meticulously designed to capture and organize all pertinent hostel-related information. This undertaking allowed for streamlined and organized hostel data management, making essential details easily accessible. Technologies utilized for this project included Java, Java-swing, and MySQL, demonstrating my adeptness in these tools.",
     "Technologies": "Java, Swing, MySQL"
+  },{
+    "title" : "ML mini projects",
+    "description": "1. Forest fire prediction: Anticipate potential wildfires in California counties to enhance environmental awareness and preparedness. The information derived from this data can assist realtors and buyers in making more informed decisions.\n2. NLP\n- Gold reference standard nominated vs non-nominated poems: The project analyzed poems using advanced Natural Language Processing techniques, comparing nominated and non-nominated ones against the Pushcart Prize benchmark\n- POS Substitutions and Semantic Analysis in Poetry: This experiment examines the impact of POS substitutions in poems by Blake and Frost using NLP techniques to understand their effects on the semantic structure and interpretation.\n3. LLM\n- Generate new poems by fine tuning mistral 7b model: The project aimed to train a language model on a curated collection of Blake's poems to generate new poetry that emulates Blake's style and themes.\n- RAG: This project integrated Weaviate vector database with a local LLM for advanced NLP tasks related to the works and historical context of William Blake. It aimed to leverage database-driven context retrieval and LLM generative abilities for nuanced natural language processing.\n- RAG with KG: The primary aim was to construct and analyze Knowledge Graphs (KG) derived from William Blake's poetry and related historical articles, focusing on their structure, content, and thematic interconnections.",
+    "Technologies": "Python, Data Mining, Machine Learning, Large Language Models (LLM), Natural Language Processing (NLP), Data Scraping, Weaviate DB, Hugging Face"
   }];
   const handleClickOpen = (ind) => {
     setOpen(true);
@@ -73,7 +81,11 @@ const Myprojects = () => {
   };
   const handleClose = () => {
     setOpen(false);
-    setContent([]);
+    setContent({
+      title: '',
+      description: '',
+      Technologies: '',
+    });
   };
 
   return (
@@ -81,6 +93,17 @@ const Myprojects = () => {
       <h2>Projects</h2>
 
       <div className="container portfolio__container">
+      <article className='portfolio__item'>
+            <div className="portfolio__item-image">
+                <img src={ML} alt="" />
+            </div>
+            <h3>ML mini projects</h3>
+            <small className='text-light'>Python | Data Mining | Machine Learning | Large Language Models (LLM) | Natural Language Processing (NLP) | Data Scraping | Weaviate DB | Hugging Face</small>
+            <div className="portfolio__item-cta">
+              <a href="https://github.com/chisunku/ML" target="_blank" rel='noreferrer' className='btn'>Github</a>
+              <Button onClick={() => handleClickOpen(8)}>more details</Button>
+            </div>
+        </article>
         <article className='portfolio__item'>
             <div className="portfolio__item-image">
                 <img src={scanIT} alt="" />
@@ -92,7 +115,6 @@ const Myprojects = () => {
               <a href="https://www.youtube.com/watch?v=sy4FiPKvGC0&t=1s" target="_blank" rel='noreferrer' className='btn'>Demo</a>
               <Button onClick={() => handleClickOpen(0)}>more details</Button>
             </div>
-              
         </article>
         <article className='portfolio__item'>
             <div className="portfolio__item-image">
@@ -199,7 +221,12 @@ const Myprojects = () => {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom>
-            {content['description']}
+          {content['description'].split('\n').map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
           </Typography>
           <Typography>
             Technologies: {content['Technologies']}
