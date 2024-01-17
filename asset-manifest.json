@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/sunku-portfolio/static/css/main.ddcd366f.css",
-    "main.js": "/sunku-portfolio/static/js/main.025276e3.js",
+    "main.js": "/sunku-portfolio/static/js/main.cbfb27d7.js",
     "static/media/foodGeeks.png": "/sunku-portfolio/static/media/foodGeeks.0a7fdd75664e904725b0.png",
     "static/media/pantry.png": "/sunku-portfolio/static/media/pantry.270aab5c5d6048e84170.png",
     "static/media/mee.png": "/sunku-portfolio/static/media/mee.7250bcdcb1f5862f61a2.png",
     "static/media/ScanIT.png": "/sunku-portfolio/static/media/ScanIT.0004670346083e794556.png",
     "static/media/drop.png": "/sunku-portfolio/static/media/drop.e8606f3f8798da321495.png",
+    "static/media/ML.png": "/sunku-portfolio/static/media/ML.51da019b824562ebe699.png",
     "static/media/BMS.png": "/sunku-portfolio/static/media/BMS.033c48faabccaaffc564.png",
     "static/media/finance.png": "/sunku-portfolio/static/media/finance.50ad0d5b611cfecc48d0.png",
     "static/media/about1.jpeg": "/sunku-portfolio/static/media/about1.209f8719f5cd88e7c21b.jpeg",
     "static/media/twitter.png": "/sunku-portfolio/static/media/twitter.bec93c48b380380e454f.png",
     "index.html": "/sunku-portfolio/index.html",
     "main.ddcd366f.css.map": "/sunku-portfolio/static/css/main.ddcd366f.css.map",
-    "main.025276e3.js.map": "/sunku-portfolio/static/js/main.025276e3.js.map"
+    "main.cbfb27d7.js.map": "/sunku-portfolio/static/js/main.cbfb27d7.js.map"
   },
   "entrypoints": [
     "static/css/main.ddcd366f.css",
-    "static/js/main.025276e3.js"
+    "static/js/main.cbfb27d7.js"
   ]
 }
