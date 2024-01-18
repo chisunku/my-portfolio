@@ -229,7 +229,7 @@ const Myprojects = () => {
           ))}
           </Typography>
           <Typography>
-            Technologies: {content['Technologies']}
+            <b>Technologies:</b> {content['Technologies']}
           </Typography>
         </DialogContent>
       </BootstrapDialog>
