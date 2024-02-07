@@ -7,36 +7,73 @@ const Experience = () => {
     <section id='skills'>
         <h2>My Skills</h2>
         <div className="container experience__container">
-                <article className='experience__details'>
-                    <div>
-                        <div className='spacing'>
-                            <h4>Programming skills</h4>
-                            <h4 className='text-light'>Java, python, C, C++, JavaScript, C#</h4>
-                        </div>
-
-                        <div className='spacing'>
-                            <h4>Web Technologies</h4>
-                            <h4 className='text-light'>React, HTML, CSS</h4>
-                        </div>
-                    <h4>Cloud Technologies</h4>
-                    <h4 className='text-light'>AWS, Azure, GCP</h4>
-                    </div>
-                </article>
-
-                <article className='experience__details'>
-                    <div>
-                        <div className='spacing'>
-                    <h4>Operating systems</h4>
-                    <h4 className='text-light'>Windows, Unix/Linux, MacOS</h4>
-                    </div>
-                    <div className='spacing'>
-                    <h4>Query Language</h4>
-                    <h4 className='text-light'>MySQL, SQL, NoSQL, PostgreSQL</h4>
-                    </div>
-                    <h4>Other Technologies</h4>
-                    <h4 className='text-light'>Snowflake, Tableau, Spring Boot,<br/> MongoDB, NodeJS, GIT, Azure, Android Studio,<br/> OpenAI, Firebase, Figma, Kubernetes</h4>
-                    </div>
-                </article>
+            <article className='experience__details'>
+                <div className='spacing'>
+                    <h4>Languages</h4>
+                    <h4 className='text-light'>
+                        <ul>• Java</ul>
+                        <ul>• Python</ul> 
+                        <ul>• C</ul>
+                        <ul>• C++</ul>
+                        <ul>• JavaScript</ul>
+                        <ul>• C#</ul>
+                    </h4>
+                </div>
+            </article>
+            <article className='experience__details'>
+                <div className='spacing'>
+                    <h4>Database Tech</h4>
+                    <h4 className='text-light'>
+                        <ul>• SQL</ul>
+                        <ul>• NoSQL</ul> 
+                        <ul>• MySQL</ul>
+                        <ul>• PostgreSQL</ul>
+                        <ul>• SQLite</ul>
+                        <ul>• Firebase</ul>
+                        <ul>• DynamoDB</ul>
+                        <ul>• MongoDB</ul>
+                        <ul>• Snowflake</ul>
+                        <ul>• SAP HANA</ul>
+                    </h4>
+                </div>
+            </article>
+            <article className='experience__details'>
+                <div className='spacing'>
+                    <h4>Cloud Tech</h4>
+                    <h4 className='text-light'>
+                        <ul>• AWS</ul>
+                        <ul>• Azure</ul>
+                        <ul>• GCP</ul>
+                    </h4>
+                </div>
+            </article>
+            <article className='experience__details'>
+                <div className='spacing'>
+                    <h4>Frontend Tech</h4>
+                    <h4 className='text-light'>
+                        <ul>• ReactJS</ul>
+                        <ul>• HTML</ul>
+                        <ul>• CSS</ul>
+                    </h4>
+                </div>
+            </article>
+            <article className='experience__details'>
+                <div className='spacing'>
+                    <h4>Other Tech</h4>
+                    <h4 className='text-light'>
+                        <ul>• Tableau</ul>
+                        <ul>• Spring Boot</ul>
+                        <ul>• Hibernate</ul>
+                        <ul>• Node.js</ul>
+                        <ul>• GIT</ul>
+                        <ul>• Android Studio</ul>
+                        <ul>• OpenAI</ul>
+                        <ul>• Figma</ul>
+                        <ul>• Kubernetes</ul>
+                        <ul>• Jenkins</ul>
+                    </h4>
+                </div>
+            </article>
         </div>
     </section>
   )
