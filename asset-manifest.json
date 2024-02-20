@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sunku-portfolio/static/css/main.4ae1069a.css",
-    "main.js": "/sunku-portfolio/static/js/main.76486bae.js",
+    "main.js": "/sunku-portfolio/static/js/main.f2e84bb2.js",
     "static/media/foodGeeks.png": "/sunku-portfolio/static/media/foodGeeks.0a7fdd75664e904725b0.png",
     "static/media/pantry.png": "/sunku-portfolio/static/media/pantry.270aab5c5d6048e84170.png",
     "static/media/mee.png": "/sunku-portfolio/static/media/mee.7250bcdcb1f5862f61a2.png",
@@ -14,10 +14,10 @@
     "static/media/twitter.png": "/sunku-portfolio/static/media/twitter.bec93c48b380380e454f.png",
     "index.html": "/sunku-portfolio/index.html",
     "main.4ae1069a.css.map": "/sunku-portfolio/static/css/main.4ae1069a.css.map",
-    "main.76486bae.js.map": "/sunku-portfolio/static/js/main.76486bae.js.map"
+    "main.f2e84bb2.js.map": "/sunku-portfolio/static/js/main.f2e84bb2.js.map"
   },
   "entrypoints": [
     "static/css/main.4ae1069a.css",
-    "static/js/main.76486bae.js"
+    "static/js/main.f2e84bb2.js"
   ]
 }
